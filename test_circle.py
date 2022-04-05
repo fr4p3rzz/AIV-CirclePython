@@ -37,8 +37,8 @@ def test_compare_dimension(mocker):
     circle_1 = Circle(True, 4)
     circle_2 = Circle(True, 8)
     circle_3 = Circle(True, 8)
-    assert circle_2.compare_dimension(circle_1) == f"Circle {circle_2._id} is bigger than circle {circle_1._id}."
-    assert circle_1.compare_dimension(circle_2) == f"Circle {circle_1._id} is smaller than circle {circle_2._id}."
+    assert circle_2.compare_dimension(circle_1) == f"Circle 1 is bigger than circle 1."
+    assert circle_1.compare_dimension(circle_2) == f"Circle 1 is smaller than circle 1."
     assert circle_2.compare_dimension(circle_3) == f"Circles are equal"
 
 def test_show_circle(circles):
